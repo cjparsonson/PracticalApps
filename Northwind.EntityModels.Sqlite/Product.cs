@@ -18,6 +18,7 @@ public partial class Product
 
     [Column(TypeName = "nvarchar (40)")]
     [StringLength(40)]
+    [Required]
     public string ProductName { get; set; } = null!;
 
     [Column(TypeName = "INT")]

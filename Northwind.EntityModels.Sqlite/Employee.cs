@@ -15,10 +15,12 @@ public partial class Employee
 
     [Column(TypeName = "nvarchar (20)")]
     [StringLength(20)]
+    [Required]
     public string LastName { get; set; } = null!;
 
     [Column(TypeName = "nvarchar (10)")]
     [StringLength(10)]
+    [Required]
     public string FirstName { get; set; } = null!;
 
     [Column(TypeName = "nvarchar (30)")]
