@@ -1,0 +1,20 @@
+﻿@page
+@using Northwind.Web.Pages
+@using Northwind.EntityModels
+@model CustomerOrdersModel
+
+@{
+    string title = "Customer and their orders";
+}
+
+<div class="row">
+    <h1 class="display-2">@title</h1>
+    <div>
+        @if (Model.Customer is not null)
+        {
+            <div>
+                <div>Model.Customer.CompanyName</div>
+            </div>
+        }
+    </div>
+</div>

@@ -12,6 +12,29 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseHsts();
 }
+
+// Implementing an anonymous inline delegate as middleware
+// to intercept HTTP requests and responses
+app.Use(async (HttpContext context, Func<Task> next) =>
+{
+    RouteEndpoint? rep = context.GetEndpoint() as RouteEndpoint;
+    if (rep is not null)
+    {
+        WriteLine($"Endpoint name: {rep.DisplayName}");
+        WriteLine($"Endpoint route pattern: {rep.RoutePattern.RawText}");
+    }
+    if (context.Request.Path == "/bonjour")
+    {
+        // In the case of a match on a URL path, this becomes a terminating
+        // delegate that returns so des not call the next delegate.
+        await context.Response.WriteAsync("Bonjour Monde!");
+        return;
+    }
+    // We could modify the request before calling the next delegate
+    await next();
+    // We could modidy the response after calling the next delegater
+});
+
 app.UseHttpsRedirection();
 app.UseDefaultFiles();
 app.UseStaticFiles();
