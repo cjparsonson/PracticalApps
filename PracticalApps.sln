@@ -11,7 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.UnitTests", "Nort
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Web", "Northwind.Web\Northwind.Web.csproj", "{E52605ED-1797-4C1E-9DAA-456C9DF247A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebApi", "Northwind.WebApi\Northwind.WebApi.csproj", "{45CBBE09-FFEC-4FC5-B008-5D9093CE5BA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.WebApi", "Northwind.WebApi\Northwind.WebApi.csproj", "{45CBBE09-FFEC-4FC5-B008-5D9093CE5BA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpRequests", "HttpRequests", "{0CD55785-CFC6-4AF4-943A-78352F33EA5B}"
+	ProjectSection(SolutionItems) = preProject
+		create-customer.http = create-customer.http
+		delete-customer.http = delete-customer.http
+		get-customers.http = get-customers.http
+		update-customer.http = update-customer.http
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
