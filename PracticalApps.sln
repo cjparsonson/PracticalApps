@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpRequests", "HttpRequest
 		update-customer.http = update-customer.http
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Mvc", "Northwind.Mvc\Northwind.Mvc.csproj", "{7EF51A88-1C90-4C61-B451-801089B9A185}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{45CBBE09-FFEC-4FC5-B008-5D9093CE5BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45CBBE09-FFEC-4FC5-B008-5D9093CE5BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45CBBE09-FFEC-4FC5-B008-5D9093CE5BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF51A88-1C90-4C61-B451-801089B9A185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF51A88-1C90-4C61-B451-801089B9A185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF51A88-1C90-4C61-B451-801089B9A185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF51A88-1C90-4C61-B451-801089B9A185}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
